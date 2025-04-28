@@ -525,6 +525,7 @@ app.get("/api/trainer-schedules", async (req, res) => {
 
 
 // Start server
+const PORT = process.env.PORT || 5000;
 app.listen(5000, () => {
   console.log("🚀 Server is running on port 5000");
 });
