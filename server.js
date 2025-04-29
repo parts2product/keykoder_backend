@@ -10,6 +10,16 @@ const path = require("path");
 const db = require("./db/db");
 require("dotenv").config();
 
+
+
+// Allow requests from your Netlify frontend
+app.use(cors({
+  origin: 'https://keykoders.netlify.app', // 👈 change this to your actual Netlify URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
+
+
 // Middleware
 app.use(express.json());
 const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:3000";
