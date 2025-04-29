@@ -13,16 +13,16 @@ require("dotenv").config();
 
 
 // Allow requests from your Netlify frontend
-app.use(cors({
-  origin: 'https://681063e2dc4ba50008fae55b--keykoders.netlify.app/', // 👈 change this to your actual Netlify URL
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
-}));
+// app.use(cors({
+//   origin: 'https://681063e2dc4ba50008fae55b--keykoders.netlify.app/', // 👈 change this to your actual Netlify URL
+//   methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//   credentials: true
+// }));
 
 
 // Middleware
 app.use(express.json());
-const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:3000";
+const FRONTEND_URL = process.env.FRONTEND_URL || "https://681063e2dc4ba50008fae55b--keykoders.netlify.app";
 app.use(
   cors({
     origin: FRONTEND_URL,
