@@ -1,9 +1,9 @@
 const mysql = require('mysql2/promise');
 
 const db = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: 'root@123', // use your password
+  host: 'keykoders-db.chcm6c8cud45.eu-north-1.rds.amazonaws.com',
+  user: 'admin',
+  password: 'Keykoders', // use your password
   database: 'keykoders', // your database name
 });
 
