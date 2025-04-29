@@ -14,7 +14,7 @@ require("dotenv").config();
 
 // Allow requests from your Netlify frontend
 app.use(cors({
-  origin: 'https://keykoders.netlify.app', // 👈 change this to your actual Netlify URL
+  origin: 'https://681063e2dc4ba50008fae55b--keykoders.netlify.app/', // 👈 change this to your actual Netlify URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
